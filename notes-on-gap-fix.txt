@@ -1,0 +1,54 @@
+problem: 
+	On chrome, there was a white gap between section-title and the parent div
+	
+	this was probably caused by the way chrome handles borders and the child divs
+	
+	the child div does inherit the parent's width, but not the width including the parent's borders
+	
+	same thing happens on Firefox
+	
+	but Firefox makes the child's width fit perfectly within the parent's borders so there is no gap
+	
+	Not true on Chrome
+	
+	That meant we couldn't layer section-title on top of col and have it look seamless
+	
+	
+	fix is a bit silly but it works
+	
+	
+	turned col into a flex container
+	
+	col's flex items are section-title, section-items, and a section-filler to fill up the empty space
+	
+	this removes the gap 
+	
+	section-items and section-filler now display the border we wanted
+	
+	col used to display the border but is now blank
+	
+	this allows section-title to inherit the right width from col
+	
+	----------------
+	
+	
+	the flexbox layout is as follows
+	
+	#columns is a flexbox, contains four cols, laid out in a row with wrap turned on
+	
+	each col is 50% width of the page, which means there's 2 to a row, witih 2 rows total
+	
+	within each col is a flexbox containing the section-title (a solid color box with text)
+	
+	and also contains section-items (the menu listing for that section) plus a stupid div which
+	
+	acts as our filler for the empty space
+	
+	the columns flexbox ensures each col in a row has the same height
+	
+	the filler helps keep the border box for each col to be the same size too, even if the text in
+	one column is less than the text in the adjacent column
+	
+	the filler works by appearing at the end of items and grows to fill the remaining vertical space
+	
+	
