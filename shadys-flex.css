@@ -29,7 +29,10 @@ div {
 #columns {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: flex-start;
+	align-content: flex-start;
+	/* had to change it because of chrome giving a slight gap */
+	/* worked ok with space-between on firefox but not chrome */
 	flex-wrap: wrap;
 	/* border: 1px solid black; */
 }
@@ -46,6 +49,7 @@ div {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	
 	/* border: 1px solid blue; */
 }
 
