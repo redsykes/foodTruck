@@ -26,6 +26,13 @@
 	/* border: 1px solid green */
 }
 
+#main-block {
+	display: flex;
+	flex-direction: column;
+}
+
+
+
 #columns {
 	display: flex;
 	flex-direction: row;
@@ -265,3 +272,34 @@ dt {
 .description {
 	text-align: right;
 }
+
+@media screen and (min-width: 100px) {
+	
+	#constainer {
+		font-size: 1.2vw;
+	}
+	
+	#main-block {
+		flex-direction: column;
+		align-content: flex-start;
+	}
+	.sub-section {
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 1500px) {
+	
+	#constainer {
+		font-size: 0.8vw;
+	}
+	
+	#main-block {
+		flex-direction: row;
+		align-content: flex-start;
+	}
+	.sub-section {
+		width: 50%;
+	}
+}
+
