@@ -72,8 +72,8 @@ html {
 .col {
 	box-sizing: border-box;
 	width: 50%;
-	/* display: flex; */
-	/* flex-direction: column; */
+	display: flex;
+	flex-direction: column;
 	/* justify-content: flex-start; */
 }
 
@@ -130,7 +130,7 @@ html {
 
 .greenbkg {
 	/* background-color: #21b47b; */
-	background-color: lightblue;
+	background-color: lavender;
 	color: white;
 }
 
