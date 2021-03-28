@@ -60,10 +60,7 @@ html {
 #columns {
 	display: flex;
 	flex-direction: row;
-	/* justify-content: flex-start; */
-	/* align-content: flex-start; */
-	/* had to change it because of chrome giving a slight gap between columns */
-	/* worked ok with space-between on firefox but not chrome */
+	justify-content: space-between;
 	flex-wrap: wrap;
 	/* border: 1px solid black; */
 }

@@ -5,18 +5,13 @@
    
    may not be needed with flexbox
 */   
-* {
+div {
     box-sizing: border-box;
 }
 
-html {
-	/* font-size: 1em; */
-	font-size: 1.2vw;
-}
 
 #container {
 	font-family: 'Open Sans Condensed', sans-serif;
-	/* font-size: 0.8em; */
 	font-size: 1.2vw;
 	/* 'vw' stands for viewport width
 		it will allow us to control the size of the text based
@@ -31,39 +26,10 @@ html {
 	/* border: 1px solid green */
 }
 
-#main-block {
-	display: flex;
-	flex-direction: column;
-	align-content: flex-start;
-}
-
-/* @media all and (max-width: 1499px) { */
-	
-	
-	/* .sub-section { */
-		/* width: 100%; */
-	/* } */
-/* } */
-
-/* @media all and (min-width: 1500px) { */
-	
-	
-	/* .section { */
-		/* width: 80%; */
-	/* } */
-	
-	/* .sub-section { */
-		/* width: 50%; */
-	/* } */
-/* } */
-
 #columns {
 	display: flex;
 	flex-direction: row;
-	/* justify-content: flex-start; */
-	/* align-content: flex-start; */
-	/* had to change it because of chrome giving a slight gap between columns */
-	/* worked ok with space-between on firefox but not chrome */
+	justify-content: space-between;
 	flex-wrap: wrap;
 	/* border: 1px solid black; */
 }
@@ -71,78 +37,48 @@ html {
 
 .col {
 	width: 50%;
-	/* display: flex; */
-	/* flex-direction: column; */
-	/* -webkit-box-orient: vertical; */
-	/* -webkit-box-direction: normal; */
-	/* -webkit-flex-direction: column;	 */
-	/* justify-content: flex-start; */
 }
 
 .section-title {
-	height: 5.5rem;
-	width: 100%;
+	height: 3.5em;
 	font-family: 'Shadows Into Light Two', sans-serif;
 	font-size: 2vw;
-	/* font-size: 1.5rem; */
 	display: flex;
 	align-items: center;
 	justify-content: center;
-
-	
 	/* border: 1px solid blue; */
 }
 
 .section-items {
 	font-family: 'Neucha', cursive;
-	font-size: 2vw;
-	/* font-size: 1.5rem; */
+	font-size: 3vw;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	align: center;
-	padding: 0.7vw;
-	flex: 1;
-	
-	/* flex:1 will stretch the element to fill the container ("col") 
-	allows us to get rid of that stupid filler element */
-	/* you also need to pair the flex:1 with align-self: flex-start
-	/* but that has to be done in the actual item, not here
-	/* so we do that in the selector for the descriptive list (dl) */
+	padding: 0.5vw;
 	/* border: 1px solid red; */
-
-}
-
-.section-filler {
-	flex: 1;
 }
 
 .section-description {
-	/* height: 1%; */
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	font-family: 'Open Sans Condensed', sans-serif;
-	font-size: 2vw;
-	/* font-size: 1.5rem; */
-}
-
-.section-description-text {
-	width: 80%;
+	font-size: 3vw;
 }
 
 .greenbkg {
-	/* background-color: #21b47b; */
-	background-color: black;
+	background-color: #21b47b;
 	color: white;
 }
 
 .greenborder {
-	border: 0.7vw solid #21b47b;
+	border: 0.5vw solid #21b47b;
 }
 
 .blueborder {
-	border: 0.7vw solid #33ccff;
+	border: 0.5vw solid #33ccff;
 }
 
 .bluebkg {
@@ -155,11 +91,11 @@ html {
 }
 
 .darkblueborder {
-	border: 0.7vw solid #218cb4;	
+	border: 0.5vw solid #218cb4;	
 }
 
 .redborder {
-	border: 0.7vw solid #ff6666;
+	border: 0.5vw solid #ff6666;
 }
 
 .redbkg {
@@ -172,7 +108,7 @@ html {
 }
 
 .darkredborder {
-	border: 0.7vw solid #cc3333;
+	border: 0.5vw solid #cc3333;
 }
 
 .orangebkg {
@@ -181,26 +117,13 @@ html {
 }
 
 .orangeborder {
-	border: 0.7vw solid #df9c1c;
+	border: 0.5vw solid #df9c1c;
 }
 
 .redsideborders {
-	border-right: 0.7vw solid #ff6666;
-	border-left: 0.7vw solid #ff6666;	
+	border-right: 0.5vw solid #ff6666;
+	border-left: 0.5vw solid #ff6666;	
 }	
-
-.pinkbkg {
-	background-color: #ff91bd;
-	color: white;
-}
-
-.pinkborder {
-	border: 0.7vw solid #ff91bd;
-}
-
-.greentext {
-	color: #1aa33a;
-}
 
 .nobottomborder {
 	border-bottom: 0vw;
@@ -214,15 +137,7 @@ html {
 
 dl {
 	flex: 1;
-	/* margin:0.8333em 0.8333em 1.25rem; */
 	margin:1vw 1vw 1.5vw;
-	align-self: flex-start;
-	/* using align-self: flex-start in order to have the menu items start
-	at the top of its container. The container will then stretch to match its
-	neighbor with blank space at the end. glad this was easy.
-	got rid of the filler elements, which was an ugly hack.
-	*/
-	
 	/* 3 values in margin shorthand are top, left & right, bottom
 	
 	/* each list item ('dl') is going to be on its own row */
@@ -235,14 +150,12 @@ dl {
 
 dd, .indent-item{
 	font-family: 'Open Sans Condensed', sans-serif;
-	/* font-size:1.5rem; */
-	font-size:2vw;
+	font-size:3vw;
 	margin-left:2vw;
 }
 
 .item-price {
-	/* font-size: 1.4rem; */
-	font-size:2vw;
+	font-size: 2.8vw;
 	/* font-family: 'Open Sans Condensed', sans-serif; */
 	/* font-family: 'Shadows Into Light Two', sans-serif; */
 	font-weight: bold;
@@ -254,14 +167,9 @@ dd, .indent-item{
 	font-weight: bold;
 }
 
-.italic {
-	font-style: italic;
-}
-
 dt {
 	display: flex;
 	justify-content: space-between;
-	align-content: flex-end;
 	/* border: 1px solid purple; */
 }
 
@@ -279,22 +187,6 @@ dt {
 
 
 
-/* .empty-item { */
-	/* height: 0.42rem; */
-	/* margin-right:6.667rem; */
-	/* margin-left:6.667rem; */
-	/* margin-bottom:1.25rem; */
-	/* margin-top:1.25rem; */
-/* } */
-
-/* .dots { */
-	/* flex: 1; */
-	/* margin-bottom: 0.50rem; */
-	/* border-bottom: 0.42rem dotted #999999; */
-	/* margin-right: 1.25rem; */
-	/* margin-left: 0.833rem; */
-/* } */
-
 .empty-item {
 	height: 0.5vw;
 	margin-right:8vw;
@@ -307,8 +199,8 @@ dt {
 
 .dots {
 	flex: 1;
-	margin-bottom: 0.9vw;
-	border-bottom: 0.5vw dotted #999999;
+	margin-bottom: 0.8vw;
+	border-bottom: 0.5vw dotted black;
 	margin-right: 1.5vw;
 	margin-left: 1vw;
 	/* look up the notes on flex: 1 (flex-grow)  */
@@ -316,13 +208,8 @@ dt {
 	/* and using margins on the item-name and item-price to keep the dots from crowding them */
 }
 
-.dblock {
-	display: block;
-	height: 1%;
-}
-
 #header {
-	height: 9vw;
+	height: 6em;
 	display: flex;
 	/* width: 95%; */
 	/* margin: auto; */
@@ -332,7 +219,7 @@ dt {
 
 #header-logo {
 	width: 25%;
-	/* height: 100%; */
+	height: 100%;
 	/* border: 1px solid blue; */
 	background-image: url("shadys-logo.svg");
 	background-size: contain;
@@ -342,21 +229,10 @@ dt {
 
 .header-text {
 	width: 25%;
-	/* height: 100%; */
+	height: 100%;
 	/* border: 1px solid green; */
 }
 
 .description {
-	text-align: center;
+	text-align: right;
 }
-
-.flexstart {
-	display: flex;
-	flex-direction: column;
-	align-content: center;
-	justify-items: flex-start;
-}
-
-
-
-
