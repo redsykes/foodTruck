@@ -64,7 +64,7 @@ html {
 	/* align-content: flex-start; */
 	/* had to change it because of chrome giving a slight gap between columns*/
 	/* worked ok with space-between on firefox but not chrome */
-	flex-wrap: wrap;
+	/* flex-wrap: wrap; */
 	/* border: 1px solid black; */
 }
 
@@ -134,7 +134,7 @@ html {
 
 .greenbkg {
 	/* background-color: #21b47b; */
-	background-color: green;
+	background-color: blue;
 	color: white;
 }
 
