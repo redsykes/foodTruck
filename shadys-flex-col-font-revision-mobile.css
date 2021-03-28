@@ -130,16 +130,16 @@ html {
 
 .greenbkg {
 	/* background-color: #21b47b; */
-	background-color: purple;
+	background-color: black;
 	color: white;
 }
 
 .greenborder {
-	border: 0.5vw solid #21b47b;
+	border: 0.7vw solid #21b47b;
 }
 
 .blueborder {
-	border: 0.5vw solid #33ccff;
+	border: 0.7vw solid #33ccff;
 }
 
 .bluebkg {
@@ -152,11 +152,11 @@ html {
 }
 
 .darkblueborder {
-	border: 0.5vw solid #218cb4;	
+	border: 0.7vw solid #218cb4;	
 }
 
 .redborder {
-	border: 0.5vw solid #ff6666;
+	border: 0.7vw solid #ff6666;
 }
 
 .redbkg {
@@ -169,7 +169,7 @@ html {
 }
 
 .darkredborder {
-	border: 0.5vw solid #cc3333;
+	border: 0.7vw solid #cc3333;
 }
 
 .orangebkg {
@@ -178,12 +178,12 @@ html {
 }
 
 .orangeborder {
-	border: 0.5vw solid #df9c1c;
+	border: 0.7vw solid #df9c1c;
 }
 
 .redsideborders {
-	border-right: 0.5vw solid #ff6666;
-	border-left: 0.5vw solid #ff6666;	
+	border-right: 0.7vw solid #ff6666;
+	border-left: 0.7vw solid #ff6666;	
 }	
 
 .pinkbkg {
@@ -192,7 +192,7 @@ html {
 }
 
 .pinkborder {
-	border: 0.5vw solid #ff91bd;
+	border: 0.7vw solid #ff91bd;
 }
 
 .greentext {
@@ -276,22 +276,38 @@ dt {
 
 
 
+/* .empty-item { */
+	/* height: 0.42rem; */
+	/* margin-right:6.667rem; */
+	/* margin-left:6.667rem; */
+	/* margin-bottom:1.25rem; */
+	/* margin-top:1.25rem; */
+/* } */
+
+/* .dots { */
+	/* flex: 1; */
+	/* margin-bottom: 0.50rem; */
+	/* border-bottom: 0.42rem dotted #999999; */
+	/* margin-right: 1.25rem; */
+	/* margin-left: 0.833rem; */
+/* } */
+
 .empty-item {
-	height: 0.42rem;
-	margin-right:6.667rem;
-	margin-left:6.667rem;
-	margin-bottom:1.25rem;
-	margin-top:1.25rem;
+	height: 0.5vw;
+	margin-right:8vw;
+	margin-left:8vw;
+	margin-bottom:1.5vw;
+	margin-top:1.5vw;
 	/* border-bottom: 0.2vw dashed black; */
-	/* border-bottom: 0.42em solid #ff9999; */
+	/* border-bottom: 0.5vw solid #ff9999; */
 }
 
 .dots {
 	flex: 1;
-	margin-bottom: 0.50rem;
-	border-bottom: 0.42rem dotted #999999;
-	margin-right: 1.25rem;
-	margin-left: 0.833rem;
+	margin-bottom: 0.9vw;
+	border-bottom: 0.5vw dotted #999999;
+	margin-right: 1.5vw;
+	margin-left: 1vw;
 	/* look up the notes on flex: 1 (flex-grow)  */
 	/* using margins to make the dots appear around the middle of the line */
 	/* and using margins on the item-name and item-price to keep the dots from crowding them */
