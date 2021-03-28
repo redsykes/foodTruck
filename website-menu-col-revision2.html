@@ -11,7 +11,25 @@
 		<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap" rel="stylesheet"> 
 		<link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet"> 
 </HEAD>
-<BODY>
+<BODY onLoad="displayOpen()">
+	
+	
+	<script>
+		"use strict";
+		
+		function displayOpen() {
+			let d = new Date();
+			console.log("day = "+d.getDay()+" hour = "+d.getHours());
+			if ( ((d.getDay() == 0)||(d.getDay() >4)) && ( (d.getHours()>9) && (d.getHours()<19) ) ) {
+				document.getElementById('nowopen').innerHTML = "Now Open!";
+				
+			}
+			else {
+				document.getElementById('nowopen').innerHTML = "";				
+			}
+		}
+		
+	</script>
 	
 	<div id="container">
 	
@@ -23,11 +41,13 @@
 				<h1 class="description dblock">33971 Ivy Bend Road</h1>
 				<h1 class="description dblock">573-340-8464</h1>
 			</div>
-			<div class="header-text">
-				<h1 class="description">Ivy Bend's Best Tacos!</h1>				
+			<div class="header-text flexstart">
+				<h1 class="description dblock">Open 11 to 7</h1>
+				<h1 class="description dblock">Fridays, Saturdays, Sundays</h1>				
 			</div>
-			<div class="header-text">
-				<h1 class="description">Open 11 to 7</h1>				
+			<div class="header-text flexstart">
+				<h1 class="description dblock">Ivy Bend's Best Tacos!</h1>
+				<h1 id="nowopen" class="description dblock greentext"></h1>
 			</div>
 		</div>
 
@@ -187,7 +207,7 @@
 								<span class="dots"></span>
 								<span class="item-price">$2.75</span>							
 							</dt>
-							<dd class="dl-description">&nbsp;&nbsp;Mild, Hot, or Chunky</dd>						
+							<dd class="dl-description italic">Mild, Hot, or Chunky</dd>						
 						</dl>
 					</div>
 				</div>
@@ -297,8 +317,8 @@
 								<span class="dots"></span>
 								<span class="item-price">$2.50</span>
 							</dt>
-							<dd class="dl-description">Shell: Hard Corn, Soft Corn, Flour</dd>
-							<dd class="dl-description">Filling: Beef, Chicken, Pork, or Beans. With lettuce, tomato, onion, & cheese.</dd>
+							<dd class="dl-description italic">Shell: Hard Corn, Soft Corn, Flour</dd>
+							<dd class="dl-description italic">Filling: Beef, Chicken, Pork, or Beans. With lettuce, tomato, onion, & cheese.</dd>
 
 							<dt class="dl-item">
 								<span class="item-name">Enchiladas (3)</span>
@@ -373,6 +393,24 @@
 							</dt>
 							<dd class="dl-description">Coke, Diet Coke, Pepsi, Diet Pepsi, Dr. Pepper, Diet Dr. Pepper, Sprite</dd>
 						
+						</dl>
+					</div>
+					<div class="section-title pinkbkg">
+						<h1>Desserts</h1>
+					</div>
+					<div class="section-items pinkborder notopborder">
+						<dl>
+							<dt class="dl-item">
+								<span class="item-name">Cinnamon Twists</span>
+								<span class="dots"></span>
+								<span class="item-price">$1.50</span>
+							</dt>
+							<dt class="dl-item">
+								<span class="item-name">Cinnamon Ice Cream with Twists</span>
+								<span class="dots"></span>
+								<span class="item-price">$4.00</span>
+							</dt>
+							
 						</dl>
 					</div>
 				
