@@ -135,11 +135,11 @@ html {
 }
 
 .greenborder {
-	border: 0.42em solid #21b47b;
+	border: 0.5vw solid #21b47b;
 }
 
 .blueborder {
-	border: 0.42em solid #33ccff;
+	border: 0.5vw solid #33ccff;
 }
 
 .bluebkg {
@@ -152,11 +152,11 @@ html {
 }
 
 .darkblueborder {
-	border: 0.42em solid #218cb4;	
+	border: 0.5vw solid #218cb4;	
 }
 
 .redborder {
-	border: 0.42em solid #ff6666;
+	border: 0.5vw solid #ff6666;
 }
 
 .redbkg {
@@ -169,7 +169,7 @@ html {
 }
 
 .darkredborder {
-	border: 0.42em solid #cc3333;
+	border: 0.5vw solid #cc3333;
 }
 
 .orangebkg {
@@ -178,12 +178,12 @@ html {
 }
 
 .orangeborder {
-	border: 0.42em solid #df9c1c;
+	border: 0.5vw solid #df9c1c;
 }
 
 .redsideborders {
-	border-right: 0.42em solid #ff6666;
-	border-left: 0.42em solid #ff6666;	
+	border-right: 0.5vw solid #ff6666;
+	border-left: 0.5vw solid #ff6666;	
 }	
 
 .pinkbkg {
@@ -192,7 +192,7 @@ html {
 }
 
 .pinkborder {
-	border: 0.42em solid #ff91bd;
+	border: 0.5vw solid #ff91bd;
 }
 
 .greentext {
