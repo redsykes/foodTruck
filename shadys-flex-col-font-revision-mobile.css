@@ -128,13 +128,13 @@ html {
 }
 
 .greenbkg {
-	background-color: #21b47b;
+	/* background-color: #21b47b; */
+	background-color: purple;
 	color: white;
 }
 
 .greenborder {
-	/* border: 0.42em solid #21b47b; */
-	border: 0.42em solid purple;
+	border: 0.42em solid #21b47b;
 }
 
 .blueborder {
