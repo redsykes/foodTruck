@@ -94,7 +94,6 @@ html {
 }
 
 .section-items {
-	height: 100%;
 	font-family: 'Neucha', cursive;
 	font-size: 2vw;
 	/* font-size: 1.5rem; */
@@ -103,7 +102,7 @@ html {
 	justify-content: space-between;
 	align: center;
 	padding: 0.7vw;
-	flex: 1;
+	flex: 1 1 0;
 	
 	/* flex:1 will stretch the element to fill the container ("col") 
 	allows us to get rid of that stupid filler element */
@@ -134,7 +133,7 @@ html {
 
 .greenbkg {
 	/* background-color: #21b47b; */
-	background-color: green;
+	background-color: black;
 	color: white;
 }
 
