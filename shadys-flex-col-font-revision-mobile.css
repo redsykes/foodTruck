@@ -99,7 +99,7 @@ html {
 	align-items: center;
 	justify-content: space-between;
 	align: center;
-	padding: 0.42rem;
+	padding: 0.7vw;
 	flex:1;
 	/* flex:1 will stretch the element to fill the container ("col") 
 	allows us to get rid of that stupid filler element */
@@ -115,7 +115,7 @@ html {
 }
 
 .section-description {
-	height: 1%;
+	/* height: 1%; */
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -130,7 +130,7 @@ html {
 
 .greenbkg {
 	/* background-color: #21b47b; */
-	background-color: black;
+	background-color: pink;
 	color: white;
 }
 
@@ -234,7 +234,7 @@ dd, .indent-item{
 	font-family: 'Open Sans Condensed', sans-serif;
 	/* font-size:1.5rem; */
 	font-size:2vw;
-	margin-left:1.667rem;
+	margin-left:2vw;
 }
 
 .item-price {
@@ -319,7 +319,7 @@ dt {
 }
 
 #header {
-	height: 7rem;
+	height: 9vw;
 	display: flex;
 	/* width: 95%; */
 	/* margin: auto; */
