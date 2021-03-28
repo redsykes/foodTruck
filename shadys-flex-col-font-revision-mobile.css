@@ -133,7 +133,8 @@ html {
 }
 
 .greenborder {
-	border: 0.42em solid #21b47b;
+	/* border: 0.42em solid #21b47b; */
+	border: 0.42em solid purple;
 }
 
 .blueborder {
