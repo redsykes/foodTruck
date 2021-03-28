@@ -103,6 +103,11 @@ html {
 	align: center;
 	padding: 0.7vw;
 	/* flex: 1; */
+	
+	/* flex: 1 worked on every browser but safari */
+	/* in theory it should be the exact same thing as flex-grow: 1 */
+	/* but it's not. so we're using flex-grow  */
+	
 	flex-grow: 1;
 	
 	/* flex:1 will stretch the element to fill the container ("col") 
@@ -137,8 +142,7 @@ html {
 }
 
 .greenbkg {
-	/* background-color: #21b47b; */
-	background-color: black;
+	background-color: #21b47b;
 	color: white;
 }
 
