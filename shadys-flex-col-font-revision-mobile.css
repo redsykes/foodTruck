@@ -60,6 +60,7 @@ html {
 #columns {
 	display: flex;
 	flex-direction: row;
+	-webkit-flex-direction: row;	
 	justify-content: flex-start;
 	align-content: flex-start;
 	/* had to change it because of chrome giving a slight gap between columns*/
@@ -132,7 +133,7 @@ html {
 
 .greenbkg {
 	/* background-color: #21b47b; */
-	background-color: pink;
+	background-color: blue;
 	color: white;
 }
 
