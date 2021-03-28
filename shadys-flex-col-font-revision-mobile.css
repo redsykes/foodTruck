@@ -10,7 +10,8 @@
 }
 
 html {
-	font-size: 1em;
+	/* font-size: 1em; */
+	font-size: 1.2vw;
 }
 
 #container {
@@ -80,8 +81,8 @@ html {
 	height: 5.5rem;
 	width: 100%;
 	font-family: 'Shadows Into Light Two', sans-serif;
-	/* font-size: 2vw; */
-	font-size: 1.5rem;
+	font-size: 2vw;
+	/* font-size: 1.5rem; */
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -92,8 +93,8 @@ html {
 
 .section-items {
 	font-family: 'Neucha', cursive;
-	/* font-size: 3vw; */
-	font-size: 1.5rem;
+	font-size: 2vw;
+	/* font-size: 1.5rem; */
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -119,8 +120,8 @@ html {
 	align-items: center;
 	justify-content: center;
 	font-family: 'Open Sans Condensed', sans-serif;
-	/* font-size: 3vw; */
-	font-size: 1.5rem;
+	font-size: 2vw;
+	/* font-size: 1.5rem; */
 }
 
 .section-description-text {
@@ -129,7 +130,7 @@ html {
 
 .greenbkg {
 	/* background-color: #21b47b; */
-	background-color: pink;
+	background-color: purple;
 	color: white;
 }
 
@@ -230,12 +231,14 @@ dl {
 
 dd, .indent-item{
 	font-family: 'Open Sans Condensed', sans-serif;
-	font-size:1.5rem;
+	/* font-size:1.5rem; */
+	font-size:2vw;
 	margin-left:1.667rem;
 }
 
 .item-price {
-	font-size: 1.4rem;
+	/* font-size: 1.4rem; */
+	font-size:2vw;
 	/* font-family: 'Open Sans Condensed', sans-serif; */
 	/* font-family: 'Shadows Into Light Two', sans-serif; */
 	font-weight: bold;
