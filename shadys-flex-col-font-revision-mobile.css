@@ -72,9 +72,9 @@ html {
 .col {
 	box-sizing: border-box;
 	width: 50%;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
+	/* display: flex; */
+	/* flex-direction: column; */
+	/* justify-content: flex-start; */
 }
 
 .section-title {
@@ -130,7 +130,7 @@ html {
 
 .greenbkg {
 	/* background-color: #21b47b; */
-	background-color: yellow;
+	background-color: lightblue;
 	color: white;
 }
 
