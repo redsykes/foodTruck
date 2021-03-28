@@ -73,6 +73,7 @@ html {
 	width: 50%;
 	display: flex;
 	flex-direction: column;
+	flex-wrap: nowrap;
 	/* -webkit-box-orient: vertical; */
 	/* -webkit-box-direction: normal; */
 	/* -webkit-flex-direction: column;	 */
@@ -102,7 +103,8 @@ html {
 	justify-content: space-between;
 	align: center;
 	padding: 0.7vw;
-	/* flex:1; */
+	flex:1;
+	
 	/* flex:1 will stretch the element to fill the container ("col") 
 	allows us to get rid of that stupid filler element */
 	/* you also need to pair the flex:1 with align-self: flex-start
@@ -132,7 +134,7 @@ html {
 
 .greenbkg {
 	/* background-color: #21b47b; */
-	background-color: green;
+	background-color: blue;
 	color: white;
 }
 
