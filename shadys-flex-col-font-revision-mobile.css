@@ -70,7 +70,6 @@ html {
 
 
 .col {
-	box-sizing: border-box;
 	width: 50%;
 	display: flex;
 	flex-direction: column;
@@ -130,7 +129,7 @@ html {
 
 .greenbkg {
 	/* background-color: #21b47b; */
-	background-color: lavender;
+	background-color: brown;
 	color: white;
 }
 
@@ -329,7 +328,7 @@ dt {
 
 #header-logo {
 	width: 25%;
-	height: 100%;
+	/* height: 100%; */
 	/* border: 1px solid blue; */
 	background-image: url("shadys-logo.svg");
 	background-size: contain;
@@ -339,7 +338,7 @@ dt {
 
 .header-text {
 	width: 25%;
-	height: 100%;
+	/* height: 100%; */
 	/* border: 1px solid green; */
 }
 
