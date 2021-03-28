@@ -59,9 +59,9 @@ html {
 
 #columns {
 	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	align-content: flex-start;
+	/* flex-direction: row; */
+	/* justify-content: flex-start; */
+	/* align-content: flex-start; */
 	/* had to change it because of chrome giving a slight gap between columns*/
 	/* worked ok with space-between on firefox but not chrome */
 	flex-wrap: wrap;
@@ -86,7 +86,7 @@ html {
 	font-family: 'Shadows Into Light Two', sans-serif;
 	font-size: 2vw;
 	/* font-size: 1.5rem; */
-	display: inline-flex;
+	display: flex;
 	align-items: center;
 	justify-content: center;
 
@@ -134,7 +134,7 @@ html {
 
 .greenbkg {
 	/* background-color: #21b47b; */
-	background-color: red;
+	background-color: green;
 	color: white;
 }
 
