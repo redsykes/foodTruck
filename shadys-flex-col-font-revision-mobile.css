@@ -71,9 +71,9 @@ html {
 
 .col {
 	width: 50%;
-	display: flex;
+	display: inline-flex;
 	flex-direction: column;
-	flex-wrap: nowrap;
+
 	/* -webkit-box-orient: vertical; */
 	/* -webkit-box-direction: normal; */
 	/* -webkit-flex-direction: column;	 */
@@ -134,7 +134,7 @@ html {
 
 .greenbkg {
 	/* background-color: #21b47b; */
-	background-color: blue;
+	background-color: yellow;
 	color: white;
 }
 
