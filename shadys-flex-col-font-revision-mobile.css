@@ -335,6 +335,7 @@ dt {
 	height: 9vw;
 	display: flex;
 	margin-bottom: 2vw;
+	border: 2px solid red;
 	/* width: 95%; */
 	/* margin: auto; */
 	/* 'auto' centers the header in the container */ 
@@ -354,7 +355,7 @@ dt {
 .header-text {
 	width: 25%;
 	/* height: 100%; */
-	border: 1px solid green;
+	/* border: 1px solid green; */
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
