@@ -28,7 +28,7 @@ html {
 	width: 95%;
 	margin: auto;
 	/* 'auto' centers the section in the container */ 
-	/* border: 1px solid green */
+	border: 4px solid purple;
 }
 
 #main-block {
@@ -335,7 +335,6 @@ dt {
 	height: 9vw;
 	display: flex;
 	margin-bottom: 2vw;
-	border: 2px solid red;
 	/* width: 95%; */
 	/* margin: auto; */
 	/* 'auto' centers the header in the container */ 
