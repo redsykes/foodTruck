@@ -58,7 +58,7 @@ html {
 /* } */
 
 .sub-section {
-	border: 6px solid black;
+	border: 6px solid purple;
 }
 
 #columns {
@@ -367,7 +367,7 @@ dt {
 
 .description {
 	display: block;
-	height: 40%;
+	/* height: 40%; */
 	width: 100%;
 	text-align: center;
 	margin:0;
@@ -385,8 +385,4 @@ dt {
 
 .banner-text {
 	font-size: 4vw;
-}
-
-.nogrow {
-	flex-grow: 0;
 }
