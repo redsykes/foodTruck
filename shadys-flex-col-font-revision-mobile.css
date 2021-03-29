@@ -58,7 +58,7 @@ html {
 /* } */
 
 .sub-section {
-	border: 6px solid purple;
+	/* border: 6px solid purple; */
 }
 
 #columns {
@@ -336,7 +336,7 @@ dt {
 }
 
 #header {
-	height: 9vw;
+	height: 10vw;
 	display: flex;
 	margin-bottom: 2vw;
 	/* width: 95%; */
