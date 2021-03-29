@@ -353,8 +353,8 @@ dt {
 
 .header-text {
 	width: 25%;
-	height: 100%;
-	/* border: 1px solid green; */
+	/* height: 100%; */
+	border: 1px solid green;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -369,7 +369,6 @@ dt {
 	margin:0;
 }
 
-
 #banner {
 	display: flex;
 	align-items: center;
@@ -383,6 +382,3 @@ dt {
 .banner-text {
 	font-size: 4vw;
 }
-
-
-
