@@ -22,7 +22,8 @@
 			let d = new Date();
 			console.log("day = "+d.getDay()+" hour = "+d.getHours());
 			if ( ((d.getDay() == 0)||(d.getDay() >4)) && ( (d.getHours()>9) && (d.getHours()<19) ) ) {
-				document.getElementById('nowopen').innerHTML = "Now Open!";
+				// temporarily disable the "now open" until it's actually open
+				//document.getElementById('nowopen').innerHTML = "Now Open!";
 				
 			}
 			else {
