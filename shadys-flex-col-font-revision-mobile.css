@@ -348,7 +348,7 @@ dt {
 	background-image: url("shadys-logo-transparent.svg");
 	background-size: contain;
 	background-repeat: no-repeat;
-	background-position: center top;
+	background-position: center center;
 }
 
 .header-text {
