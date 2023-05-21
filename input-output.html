@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Web Page with Input and Output Fields</title>
+</head>
+<body>
+<h1>Web Page with Input and Output Fields</h1>
+
+<input type="text" id="input">
+<input type="submit" id="submit" value="Submit">
+<br>
+<output id="output">blah</output>
+
+<script>
+function changeCase(str) {
+  const newStr = str.split("").map((char, index) => {
+    if (index % 2 === 0) {
+      return char.toLowerCase();
+    } else {
+      return char.toUpperCase();
+    }
+  });
+  return newStr.join("");
+}
+
+function substitute(str) {
+  const substitutions = {
+    "w": "\/\/",
+    "a": "4",
+    "ou": "00",
+    "o": "0",
+    "i": "1",
+    "x": "><",
+    "s": "$",
+    "t": "7",
+    "e": "3",
+  };
+
+  var s = str;
+  s = s.replaceAll('w',"\\/\\/");
+  s = s.replaceAll('a','4');
+  s = s.replaceAll('ou','00');
+  s = s.replaceAll('o','0');
+  s = s.replaceAll('i','1');
+  s = s.replaceAll('x','><');
+  s = s.replaceAll('s','$');
+  s = s.replaceAll('t','7');
+  s = s.replaceAll('e','3');
+  return s
+
+  /* return str.replaceAll(/[a-z]/gi, (char) => {
+    return substitutions[char];
+  });*/
+}
+
+function main() {
+  var input = document.getElementById("input").value;
+  var output = document.getElementById("output");
+
+  // Make the entire input string lowercase.
+  input = input.toLowerCase();
+  console.log("Step 1: "+input)
+  // Perform the substitutions listed above.
+  input = substitute(input);
+  console.log("Step 2: "+input)
+  // Turn every odd numbered letter lowercase and every even numbered letter uppercase.
+  input = changeCase(input);
+
+  // Display the new string in the output field.
+  output.textContent = input;
+  console.log(input)
+}
+
+document.getElementById("submit").addEventListener("click", main);
+</script>
+</body>
+</html>
